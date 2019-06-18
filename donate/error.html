@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Donation - iWallet</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="css/ladda-themeless.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <style type="text/css">
+    .help-tip {
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+    .modal-header {
+      background: #EA8005;
+    }
+    .modal-header h4.modal-title {
+      color: #fff;
+    }
+    .modal-body label {
+      color: #5e5e5e;
+    }
+    .btn {
+      /*border-width: 0;*/
+      text-decoration: none;
+      font-family: 'Roboto Condensed', sans-serif;
+      -webkit-transition: all 0.3s ease 0.2s;
+      -moz-transition: all 0.3s ease 0.2s;
+      -ms-transition: all 0.3s ease 0.2s;
+      -o-transition: all 0.3s ease 0.2s;
+      transition: all 0.3s ease 0.1s;
+      text-transform: uppercase;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+    }
+    .btn-primary {
+      background: #EA8005;
+      color: #fff;
+      border: 1px solid #c5c5c5;
+    }
+    .btn-primary:hover,
+    .btn-primary:focus {
+      background: #c5c5c5;
+      border-color: #777777;
+    }
+    .btn-primary:active {
+      box-shadow: inset 0 3px 3px rgba(0,0,0,0.1);
+      border-color: #EA8005;
+    }
+    .btn-primary[disabled] {
+      background: #EA8005;
+      border-color: #c5c5c5;
+    }
+
+    #iwallet-logo {
+      background: url(images/iwallet-logo-grey.png) no-repeat;
+      width: 105px;
+      height: 30px;
+      -webkit-transition: all 0.3s ease 0.2s;
+      -moz-transition: all 0.3s ease 0.2s;
+      -ms-transition: all 0.3s ease 0.2s;
+      -o-transition: all 0.3s ease 0.2s;
+      transition: all 0.3s ease 0.1s;
+    }
+    #iwallet-logo:hover {
+      background: url(images/iwallet-logo.png) no-repeat;
+    }
+    .form-control.error,
+    label.error {
+      color: #f14f5b;
+      border-color: #f14f5b;
+      font-weight: 100;
+    }
+  </style>
+    <div class="modal fade in" id="sponsorModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" style="display: block;">
+      <div class="modal-dialog">
+        <form class="form-horizontal" id="donationForm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title" id="myModalLabel">Donate with iWallet</h4>
+            </div>
+
+            
+            <div class="modal-body">
+
+                <div class="alert alert-danger">
+               <strong>Error</strong> There was a problem processing your donation.
+                       </div>
+
+            </div>
+
+            <div class="modal-footer">
+              <a id="iwallet-logo" href="https://i-walletlive.com" target="_blank" class="pull-left"></a>
+              <a href="http://www.dreamoval.org" class="btn btn-default"> Close</a>
+            
+            </div>
+          </div><!-- /.modal-content -->
+        </form>
+      </div><!-- /.modal-dialog -->
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/spin.min.js"></script>
+    <script src="js/ladda.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $('#sponsorModal').modal({
+          keyboard: false,
+          backdrop: 'static'
+        });
+
+      });
+    </script>
+  </body>
+</html>
